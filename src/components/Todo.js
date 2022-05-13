@@ -6,7 +6,7 @@ const Todo = ({ deleteTodo, completeTodo, todo, index }) => {
 
   return (
     <div className="py-2 px-3 flex items-center justify-between hover:bg-blue-100">
-      <div className="flex items-center">
+      <div className="flex items-center w-11/12">
         <button
           className="p-1 bg-white rounded-full shadow border"
           onClick={() => completeTodo(index)}
@@ -18,7 +18,7 @@ const Todo = ({ deleteTodo, completeTodo, todo, index }) => {
           )}
         </button>
         <p
-          className={`capitalize ml-2 text-blue-400 font-semibold ${
+          className={`capitalize ml-2 text-blue-400 font-semibold break-all ${
             done && "text-gray-500 line-through"
           }`}
         >
